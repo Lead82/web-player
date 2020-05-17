@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <title>Player</title>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <noscript>
+                <style>
+                  /* Reinstate scrolling for non-JS clients */
+                  .simplebar-content-wrapper {
+                    overflow: auto;
+                  }
+                </style>
+            </noscript>
+            <div class="header-container">
+                <h1>PMP Web Player</h1>
+            </div>
+        </header>
+        <section class="upper">
+            <div class="lyrics-container" data-simplebar data-simplebar-scrollbar-max-size="200">
+                <div class="lyrics-text">
+                </div>
+            </div>
+        </section>
+        <section class="lower">
+            <div class="controls-container">
+                <button class="skip-backward"></button>
+                <button class="play">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 620">
+                        <rect x="46.5" y="18.5" width="151" height="585" rx="30" />
+                        <rect x="389.5" y="18.5" width="151" height="585" rx="30" />
+                    </svg>
+                </button>
+                <button class="skip-forward">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 620">
+                        <path class="a"
+                            d="M552.29,277.63,81.35,21.16A30,30,0,0,0,37,47.5v513A30,30,0,0,0,81.35,586.8L552.29,330.33C573.16,319,573.16,289,552.29,277.63Z" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+</body>
+
+</html>

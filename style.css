@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    color: black;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    padding: 0 1.2rem;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 800;
+}
+
+.upper {
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lyrics-container {
+    max-width: 1400px;
+    width: 95%;
+    height: 95%;
+    background-color: rgb(21, 23, 26);
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+.lyrics-container .simplebar-track {
+    background-color: transparent;
+    width: 18px!important;
+    height: 95%;
+}
+
+.lyrics-container .simplebar-vertical {
+    top: 2.5%!important;
+}
+
+.lyrics-container .simplebar-scrollbar::before{
+    width: 30%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+    background-color: white;
+    opacity: 50%;
+}
+
+.simplebar-visible::before{
+    /* background-color: white; */
+    opacity: 100%!important;
+}
+
+.lyrics-text {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    padding: 2rem 25rem;
+    line-height: 4rem;
+}
+
+.lower {
+    background-color: rgb(60, 116, 219);
+    flex: 1;
+}
+
+.controls-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skip-backward {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+}
+
+.play {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 6rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    border: 0px;
+    fill: white;
+}
+
+.skip-forward {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 6rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    border: 0px;
+    fill: white;
+}
