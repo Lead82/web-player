@@ -98,30 +98,70 @@ header h1 {
     align-items: center;
 }
 
-.skip-backward {
-    cursor: pointer;
+.skip-previous-container{
     display: inline-block;
-    margin: 0;
+    height: 2.2rem;
+    width: 2.2rem;
 }
-
-.play {
+.skip-previous {
+    outline: none;
     cursor: pointer;
-    display: inline-block;
-    margin-left: 6rem;
-    height: 3rem;
-    width: 3rem;
+    width: 100%;
+    height: 100%;
     background-color: transparent;
     border: 0px;
     fill: white;
 }
+.skip-previous::-moz-focus-inner {
+    border: 0;
+  }
+.skip-previous img {
+    width: 100%;
+    height: 100%;
+}
 
-.skip-forward {
-    cursor: pointer;
+.play-pause-container {
     display: inline-block;
     margin-left: 6rem;
     height: 3rem;
     width: 3rem;
+}
+.play-pause {
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
     background-color: transparent;
     border: 0px;
     fill: white;
+}
+.play-pause::-moz-focus-inner {
+    border: 0;
+  }
+.play-pause img {
+    width: 100%;
+    height: 100%;
+}
+
+.skip-next-container {
+    display: inline-block;
+    margin-left: 6rem;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+.skip-next {
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 0px;
+    fill: white;
+}
+.skip-next::-moz-focus-inner {
+    border: 0;
+  }
+.skip-next img {
+    width: 100%;
+    height: 100%;
 }

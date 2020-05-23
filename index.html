@@ -14,10 +14,10 @@
         <header>
             <noscript>
                 <style>
-                  /* Reinstate scrolling for non-JS clients */
-                  .simplebar-content-wrapper {
-                    overflow: auto;
-                  }
+                    /* Reinstate scrolling for non-JS clients */
+                    .simplebar-content-wrapper {
+                        overflow: auto;
+                    }
                 </style>
             </noscript>
             <div class="header-container">
@@ -32,19 +32,21 @@
         </section>
         <section class="lower">
             <div class="controls-container">
-                <button class="skip-backward"></button>
-                <button class="play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 620">
-                        <rect x="46.5" y="18.5" width="151" height="585" rx="30" />
-                        <rect x="389.5" y="18.5" width="151" height="585" rx="30" />
-                    </svg>
-                </button>
-                <button class="skip-forward">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 601 620">
-                        <path class="a"
-                            d="M552.29,277.63,81.35,21.16A30,30,0,0,0,37,47.5v513A30,30,0,0,0,81.35,586.8L552.29,330.33C573.16,319,573.16,289,552.29,277.63Z" />
-                    </svg>
-                </button>
+                <div class="skip-previous-container">
+                    <button class="skip-previous">
+                        <img src="assets/skip-previous.svg" alt="skip-previous">
+                    </button>
+                </div>
+                <div class="play-pause-container">
+                    <button class="play-pause">
+                        <img src="assets/play.svg" alt="play" >
+                    </button>
+                </div>
+                <div class="skip-next-container">
+                    <button class="skip-next">
+                        <img src="assets/skip-next.svg" alt="skip-next">
+                    </button>
+                </div>
             </div>
         </section>
     </div>
