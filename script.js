@@ -6,7 +6,7 @@ const playButton = document.querySelector(".play-pause")
 
 //EVENT LISTENERS
 playButton.addEventListener('click', switchPlayPause)
-window.addEventListener('load', getLyrics)
+window.addEventListener('load', getLyrics("Ed Sheeran","I see fire"))
 
 //FUNCTIONS 
 function switchPlayPause() {
@@ -24,7 +24,7 @@ function getLyrics(artist,song) {
     artist = encodeURIComponent(artist.trim())
     song = encodeURIComponent(song.trim())
     var reqUrl = "https://api.lyrics.ovh/v1/"+artist+"/"+song
-    
+
     var xhr = new XMLHttpRequest
     xhr.open('GET', reqUrl, true)
 
